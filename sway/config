@@ -5,7 +5,7 @@ font pango:JetBrainsMono Regular 8
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
-exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id dex --autostart --environment sway
 
 # wallpaper
 output * bg ~/.config/sway/wallpapers.webp fill
