@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/3cd60a20-343b-48e1-a3a5-048651367c54
 
 # **Dependencies**
 ```
-sway, rofi, mako, fastfetch, i3status, swaybg, hyprshot/flameshot, kitty, thunar, ttf-jetbrains-mono
+sway, rofi, mako, fastfetch, waybar, swaybg, hyprshot/flameshot, kitty, thunar, ttf-jetbrains-mono
 ```
 
 # **Installation**
