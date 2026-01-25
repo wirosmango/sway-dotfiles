@@ -1,6 +1,6 @@
 set $mod Mod4
 
-# Font
+# Font 
 font pango:JetBrainsMono Regular 8
 
 # Start XDG autostart .desktop files using dex. See also
@@ -8,9 +8,8 @@ font pango:JetBrainsMono Regular 8
 exec --no-startup-id dex --autostart --environment sway
 
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-
 # wallpaper
-output * bg ~/.config/sway/wallpapers.webp fill
+output * bg ~/.config/i3/wallpapers.webp fill
 # Layout
 input * {
     xkb_layout "us,ru"
@@ -20,7 +19,6 @@ input * {
 # Gaps
 gaps inner 8
 gaps outer 1
-
 
 # Title
 for_window [class="^.*"] border pixel 2
@@ -33,12 +31,14 @@ bindsym Print exec hyprshot -m region
 # Notifications
 exec_always --no-startup-id mako
 
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# NetworkManager applet 
-exec --no-startup-id nm-applet
+# NetworkManager applet
+exec --no-startup-id nm-applet &
 
-# Volume control.
+# Volume control
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +6% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -6% && $refresh_i3status
@@ -52,8 +52,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# cursor theme
-seat seat0 xcursor_theme GoogleDot-Black 24
+seat seat0 xcursor_theme GoogleDot-Black
+
 # touchpad
 input type:touchpad {
     tap enabled
@@ -73,7 +73,7 @@ bindsym --to-code $mod+e exec thunar
 bindsym --to-code $mod+x exec firefox
 
 # start wofi -show drun (a program launcher)
-bindsym --to-code $mod+d exec --no-startup-id wofi --show drun
+bindsym --to-code $mod+d exec --no-startup-id rofi -show drun
 
 # change focus
 bindsym $mod+j focus left
@@ -163,7 +163,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym --to-code $mod+Shift+c reload
-# Restart sway
+# restart sway
 bindsym $mod+Shift+r restart
 # exit sway
 bindsym --to-code $mod+Shift+e exec "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'"
