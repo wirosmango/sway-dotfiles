@@ -21,13 +21,9 @@
         "spacing": 10
     },
     "clock#1": {
-        "format": "󰥔  {:%H:%M %d %B %Y}",
-        "tooltip-format": "󰥔  {:%Y-%m-%d | %H:%M}"
-    },
-	"clock#2": {
-		"format": " {:%d. %B %Y}  󰃭 ",
-		 "tooltip-format": "{:%Y-%m-%d | %H:%M}"
-
+        "format": "{:%H:%M:%S %d %B %Y}",
+		"interval": 1,
+        "tooltip-format": "{:%Y-%m-%d | %H:%M}"
 	},
     "cpu": {
         "format": "{usage}% "
