@@ -1,0 +1,95 @@
+{
+    "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar at the bottom of your screen
+    "height": 15, // Waybar height
+    // "width": 1280, // Waybar width
+    // Choose the order of the modules
+    "modules-left": ["sway/workspaces","sway/mode","mpris"],
+    "modules-center": ["clock#1"],
+    "modules-right": ["pulseaudio","battery","cpu","memory","tray","sway/language"],
+    // Modules configuration
+     "sway/workspaces": {
+         "disable-scroll": false,
+         "all-outputs": false,
+         "format": "{name}"
+     },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "tray": {
+	//"icon-size": 21,
+        "spacing": 10
+    },
+    "clock#1": {
+        "format": "󰥔  {:%H:%M :%d %B %Y}",
+        "tooltip-format": "󰥔  {:%Y-%m-%d | %H:%M}"
+    },
+	"clock#2": {
+		"format": " {:%d. %B %Y}  󰃭 ",
+		 "tooltip-format": "{:%Y-%m-%d | %H:%M}"
+
+	},
+    "cpu": {
+        "format": "{usage}% "
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "network": {
+        // "interface": "wlp2s0", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "Disconnected ⚠"
+        },
+        "battery": {
+	        "states": {
+	            "good": 100,
+	            "warning": 30,
+	            "critical": 10
+	        },
+	        "format": "{icon} {capacity}%",
+	        "format-charging": " {capacity}%",
+	        "format-plugged": " {capacity}%",
+	        "format-alt": "{icon} {time}",
+	        // "format-good": "", // An empty format will hide the module
+	        "format-full": " {capacity}%",
+	        "format-icons": [
+	            "",
+	            "",
+	            "",
+	            "",
+	            "",
+	            "",
+	            "",
+	            "",
+	            "",
+	            ""
+	        ],
+	        "interval": 2
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "on-click": "foot -e wiremix"
+    },
+    "mpris": {
+     	"format": "{status_icon} {artist} - {title}",
+     	"format-stopped": "",
+     	"status-icons": {
+     		"playing": "",
+     		"paused": "󰐊",
+     		},
+     	},
+}
+//
