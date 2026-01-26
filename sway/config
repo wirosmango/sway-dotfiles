@@ -35,6 +35,10 @@ exec_always --no-startup-id mako
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
+# clipboard
+exec wl-paste --watch cliphist store
+bindsym --to-code $mod+c exec rofi -modi clipboard:~/.config/cliphist-rofi -show clipboard
+
 # NetworkManager applet
 exec --no-startup-id nm-applet &
 
