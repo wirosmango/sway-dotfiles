@@ -9,7 +9,7 @@ exec --no-startup-id dex --autostart --environment sway
 
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 # wallpaper
-output * bg ~/.config/i3/wallpapers.webp fill
+output * bg ~/.config/sway/wallpapers.webp fill
 # Layout
 input * {
     xkb_layout "us,ru"
