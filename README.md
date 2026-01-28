@@ -5,7 +5,7 @@ My dotfiles for swaywm
 
 # **Screen record**
 
-https://github.com/user-attachments/assets/b04767ef-6743-40e4-8685-482249a8ab18
+https://github.com/user-attachments/assets/add8996f-8447-47ed-9827-81ff8ffc3b21
 
 # **Dependencies**
 ```
