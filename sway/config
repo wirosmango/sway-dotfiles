@@ -214,3 +214,6 @@ bindsym $mod+r mode "resize"
 #}
 # waybar
 exec waybar -c ~/.config/waybar/config1.jsonc
+
+# greeting
+exec notify-send "Hello!"
