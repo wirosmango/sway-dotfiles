@@ -6,7 +6,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces","sway/mode","mpris"],
     "modules-center": ["clock#1"],
-    "modules-right": ["pulseaudio","battery","cpu","memory","tray","sway/language"],
+    "modules-right": ["pulseaudio","battery","cpu","memory","bluetooth","tray","sway/language"],
     // Modules configuration
      "sway/workspaces": {
          "disable-scroll": false,
@@ -24,6 +24,11 @@
         "format": "{:%H:%M:%S %d %B %Y}",
 		"interval": 1,
         "tooltip-format": "{:%Y-%m-%d | %H:%M}"
+    },
+	"clock#2": {
+		"format": " {:%d. %B %Y}  󰃭 ",
+		 "tooltip-format": "{:%Y-%m-%d | %H:%M}"
+
 	},
     "cpu": {
         "format": "{usage}% "
@@ -87,5 +92,13 @@
      		"paused": "󰐊",
      		},
      	},
+     	"bluetooth": {
+     	  "format": "{icon}",
+     	  "format-icons": {
+     	    "enabled": "",
+     	    "disabled": "!"
+     	},
+     	"on-click": "kitty -e bluetui"
+     },
 }
 //
