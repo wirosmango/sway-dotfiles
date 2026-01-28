@@ -77,7 +77,7 @@
             "car": "",
             "default": ["", ""]
         },
-        "on-click": "foot -e wiremix"
+        "on-click": "kitty -e wiremix"
     },
     "mpris": {
      	"format": "{status_icon} {artist} - {title}",
