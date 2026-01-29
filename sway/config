@@ -63,6 +63,10 @@ input type:touchpad {
     tap enabled
     natural_scroll enabled
 }
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
+bindgesture swipe:down kill
+bindgesture swipe:up exec kitty
 
 # start a terminal
 bindsym $mod+Return exec kitty
