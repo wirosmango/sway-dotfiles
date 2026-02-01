@@ -82,6 +82,8 @@ bindsym --to-code $mod+x exec firefox
 
 # start wofi -show drun (a program launcher)
 bindsym --to-code $mod+d exec --no-startup-id rofi -show drun
+# rofi -show window (switching windows)
+bindsym $mod+Tab exec rofi -show window
 
 # change focus
 bindsym $mod+j focus left
