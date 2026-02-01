@@ -173,8 +173,8 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym --to-code $mod+Shift+c reload
 # restart sway
 bindsym $mod+Shift+r restart
-# exit sway
-bindsym --to-code $mod+Shift+e exec "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'"
+# wlogout (logout, poweroff, reboot)
+bindsym --to-code $mod+p exec wlogout
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
