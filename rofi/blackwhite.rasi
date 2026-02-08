@@ -26,10 +26,10 @@ window {
     orientation: horizontal;
     location: center;
     anchor: center;
-    transparency: "screenshot";
+    transparency: "real";
     border-color: @primary;   
     border: 3px;
-    border-radius: 6px;
+    border-radius: 10px;
     spacing: 0;
     children: [ mainbox ];
 }
@@ -82,16 +82,19 @@ element {
     vertical-align: 1;
     color: @kl;
     font: inherit;
+    border-radius: 15;
 }
 
 element-text {
     background-color: inherit;
     text-color: inherit;
+    border-radius: 15;
 }
 
 element selected.normal {
     color: @black;
     background-color: @hv;
+    border-radius: 20;
 }
 
 element normal active {
