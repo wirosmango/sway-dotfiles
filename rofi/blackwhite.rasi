@@ -1,10 +1,10 @@
 
 // define colors etc.
 * {
-    bg: #000000;
+    bg: transparent;
     hv: #ffffff; 
     primary: #ffffff; 
-    ug: #ffffff;
+    ug: #000000;
     font: "JetBrainsMono Regular 11";
     background-color: @bg;
     //dark: @bg;
