@@ -1,4 +1,5 @@
 set $mod Mod4
+set $term kitty
 
 # Font 
 font pango:JetBrainsMono Regular 8
@@ -20,6 +21,9 @@ input * {
 gaps inner 8
 gaps outer 1
 
+# Rounded corners
+corner_radius 10
+
 # Title
 for_window [class="^.*"] border pixel 2
 client.focused #ffffff #ffffff #000000 #ffffff #ffffff
@@ -30,10 +34,6 @@ bindsym Print exec hyprshot -m region
 
 # Notifications
 exec_always --no-startup-id mako
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # clipboard
 exec wl-paste --watch cliphist store
@@ -66,10 +66,10 @@ input type:touchpad {
 bindgesture swipe:right workspace prev
 bindgesture swipe:left workspace next
 bindgesture swipe:down kill
-bindgesture swipe:up exec kitty
+bindgesture swipe:up exec $term
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym --to-code $mod+q kill
