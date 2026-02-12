@@ -7,7 +7,7 @@
     "margin-right": 5,
     // Choose the order of the modules
     "modules-left": ["sway/workspaces","sway/mode","mpris"],
-    "modules-center": ["clock#1"],
+    "modules-center": ["clock#1","custom/calendar"],
     "modules-right": ["pulseaudio","battery","cpu","memory","bluetooth","tray","sway/language"],
     // Modules configuration
      "sway/workspaces": {
@@ -98,5 +98,13 @@
      	},
      	"on-click": "kitty -e bluetui"
      },
+     "custom/calendar": {
+     	"format": "📅",
+     	"tooltip": true,
+     	"exec": "echo '{\"text\":\" \",\"tooltip\":\"calcure\"}'",
+     	"return-type": "json",
+     	"on-click": "kitty -e calcure",
+     },
+    }
 }
 //
