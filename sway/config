@@ -67,6 +67,7 @@ bindgesture swipe:right workspace prev
 bindgesture swipe:left workspace next
 bindgesture swipe:down kill
 bindgesture swipe:up exec $term
+bindgesture hold:3 exec rofi -show drun
 
 # start a terminal
 bindsym $mod+Return exec $term
@@ -223,3 +224,6 @@ exec waybar -c ~/.config/waybar/config1.jsonc
 
 # greeting
 exec notify-send "Hello!"
+
+# window rules
+for_window [app_id="mate-calc"] floating toggle
