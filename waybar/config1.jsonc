@@ -8,7 +8,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces","sway/mode","mpris"],
     "modules-center": ["clock#1","custom/calendar"],
-    "modules-right": ["pulseaudio","battery","cpu","memory","bluetooth","tray","sway/language"],
+    "modules-right": ["pulseaudio","backlight","battery","cpu","memory","bluetooth","tray","sway/language"],
     // Modules configuration
      "sway/workspaces": {
          "disable-scroll": false,
@@ -105,6 +105,22 @@
      	"return-type": "json",
      	"on-click": "kitty -e calcure",
      },
+       "backlight": {
+        // "device": "acpi_video1",
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "interval": 2
+        },
     }
 }
 //
