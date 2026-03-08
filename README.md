@@ -1,7 +1,7 @@
 # sway-dotfiles
 My dotfiles for swaywm
 
-<img width="1920" height="1080" alt="2026-02-11-235916_hyprshot" src="https://github.com/user-attachments/assets/a584a079-de0c-4af0-b779-21498a20dac2" />
+<img width="1920" height="1080" alt="2026-03-08-120116_hyprshot" src="https://github.com/user-attachments/assets/a8252b97-fff0-43f7-b5b8-d105c8dcfe38" />
 
 # **Screen record**
 
