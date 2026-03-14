@@ -53,16 +53,11 @@
 	        // "format-good": "", // An empty format will hide the module
 	        "format-full": " {capacity}%",
 	        "format-icons": [
-	            "",
-	            "",
-	            "",
-	            "",
-	            "",
-	            "",
-	            "",
-	            "",
-	            "",
-	            ""
+	        " ",
+	        "",
+	        "",
+	        "",
+	        "",
 	        ],
 	        "interval": 2
     },
@@ -124,3 +119,4 @@
     }
 }
 //
+
