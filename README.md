@@ -5,7 +5,7 @@ My dotfiles for swaywm
 
 # **Screen record**
 
-<video src=https://github.com/wirosmango/sway-dotfiles/blob/main/4readme/2026-03-15%2016-10-09.mp4 </video>
+<video> <source src=https://github.com/wirosmango/sway-dotfiles/blob/main/4readme/2026-03-15%2016-10-09.mp4 /> </video>
 
 # **Dependencies**
 ```
