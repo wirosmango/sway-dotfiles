@@ -1,0 +1,12 @@
+image=~/.config/swaylock/trees.jpg
+scaling=fill
+show-failed-attempts
+ring-color=#000000
+font=JetBrainsMono
+bs-hl-color=#e0ecff
+line-color=#000000
+line-clear-color=#ffffff
+line-ver-color=#20e381
+line-wrong-color=#c42b2b
+ring-clear-color=#ffffff
+
