@@ -1,5 +1,5 @@
 configuration{
-    modi: ["drun", "window", "run"];
+    modi: ["drun", "window", "run", "filebrowser", "ssh", "recursivebrowser"];
     icon-theme: "Adwaita";
     show-icons: true;
     terminal: "kitty";
@@ -7,9 +7,9 @@ configuration{
     location: 0;
     disable-history: false;
     sidebar-mode: false;
-    display-drun: " ";
-    display-run: " ";
-    display-window: " ";
+    display-drun: "🔎";
+    display-run: "🔍";
+    display-window: "🗖 ";
     
     //adding vim keybindings
     kb-row-up: "Up,Control+k";
