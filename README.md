@@ -11,7 +11,7 @@ https://github.com/user-attachments/assets/1ff9d962-8e98-4b82-a538-a2647f640222
 ```
 swayfx (AUR), rofi, mako, fastfetch, waybar, swaybg, hyprshot/flameshot, kitty,
 thunar, ttf-jetbrains-mono, otf-font-awesome, cliphist, wiremix, wlogout (AUR),
-bluetui (AUR), conky, swaylock-effects (AUR)
+bluetui (AUR), swaylock-effects (AUR)
 ```
 
 # **Installation**
