@@ -18,7 +18,8 @@ bluetui (AUR), swaylock-effects (AUR)
 ```
 git clone https://github.com/wirosmango/sway-dotfiles.git
 cd sway-dotfiles
-cp -r * ~/.config
+chmod +x install.sh
+./install.sh
 ```
 
 **Done!**
