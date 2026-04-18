@@ -1,11 +1,11 @@
 # sway-dotfiles
 My dotfiles for swaywm
 
-<img width="1920" height="1080" alt="2026-03-15-160935_hyprshot" src="https://github.com/user-attachments/assets/b598b5a7-5b54-47cd-accc-4d9141eafbca" />
+<img width="1920" height="1080" alt="2026-04-18-175137_hyprshot" src="https://github.com/user-attachments/assets/27ea773d-eef5-425c-8450-78c49e1152c1" />
 
 # **Screen record**
 
-https://github.com/user-attachments/assets/1ff9d962-8e98-4b82-a538-a2647f640222
+https://github.com/user-attachments/assets/c24895ec-3369-4f3c-979a-d4780720bde6
 
 # **Dependencies**
 ```
