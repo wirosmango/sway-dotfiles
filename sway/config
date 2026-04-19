@@ -47,7 +47,7 @@ bindsym Print exec hyprshot -m region
 # Notifications
 exec_always --no-startup-id mako
 
-# clipboard
+# Clipboard
 exec wl-paste --watch cliphist store
 bindsym --to-code $mod+c exec rofi -modi clipboard:~/.config/cliphist-rofi -show clipboard
 
@@ -63,7 +63,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 bindsym $mod+o exec kitty -e wiremix
 
-# Brigthness conrol
+# Brightness control
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
@@ -92,7 +92,7 @@ bindsym --to-code $mod+q kill
 # start file manager
 bindsym --to-code $mod+e exec thunar
 
-# start librewolf
+# start firefox
 bindsym --to-code $mod+x exec firefox
 
 # start wofi -show drun (a program launcher)
