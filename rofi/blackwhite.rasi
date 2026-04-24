@@ -17,7 +17,7 @@
 
 // defines different aspects of the window
 window {
-    width: 700;
+    width: 600;
     /*since line wont work with height, i comment it out 
     if you rather control the size via height
     just comment it out */
@@ -41,8 +41,8 @@ mainbox {
 
 inputbar {
     color: @kl;
-    padding: 11px;
-    border: 0 0 2px 0;
+    padding: 10px;
+    border: 0 0 0 0;
     border-color: @primary;
 }
 
@@ -53,6 +53,7 @@ message {
 textbox {
     color: @kl;
     padding: 10px;
+    border-radius: 5;
 }
 
 entry, prompt, case-indicator {
@@ -62,10 +63,12 @@ entry, prompt, case-indicator {
 
 entry {
     cursor: pointer;
+    border-radius: 0;
 }
 
 prompt {
     margin: 0px 5px 0px 0px;
+    border-radius: 5;
 }
 
 listview {
@@ -73,7 +76,7 @@ listview {
     //spacing: 5px;
     padding: 8px;
     lines: 12;
-    columns: 1;
+    columns: 2;
     dynamic: false;
 }
 
