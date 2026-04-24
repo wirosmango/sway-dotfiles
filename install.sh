@@ -15,7 +15,8 @@ else
     exit 1
 fi
 
-chmod +x cliphist-rofi
+chmod +x cliphist-rofi 
+wl-paste --watch cliphist store
 cp -r * ~/.config
 
 echo "Done!"
