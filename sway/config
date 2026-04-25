@@ -41,7 +41,7 @@ exec swayidle -w \
 bindsym --to-code $mod+l exec swaylock -f
 
 # Screenshot
-bindsym Print exec grimshot --notify --cursor save area
+bindsym Print exec hyprshot -m region
 
 # Notifications
 exec_always --no-startup-id mako
