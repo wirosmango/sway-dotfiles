@@ -200,3 +200,6 @@ exec notify-send "Hello!"
 
 # window rules
 for_window [app_id="mate-calc"] floating toggle
+
+# fastfetch
+bindsym --to-code alt+f exec kitty --hold fastfetch 
