@@ -78,7 +78,7 @@
         "on-click": "kitty -e wiremix"
     },
     "mpris": {
-     	"format": "{status_icon} {artist} - {title}",
+     	"format": "{status_icon} {title}",
      	"format-stopped": "",
      	"status-icons": {
      		"playing": "",
