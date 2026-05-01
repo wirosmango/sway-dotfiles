@@ -190,7 +190,7 @@ bindsym --to-code $mod+Shift+c reload
 # restart sway
 bindsym $mod+Shift+r restart
 # wlogout (logout, poweroff, reboot)
-bindsym --to-code $mod+p exec wlogout
+bindsym --to-code $mod+p exec rofi -show power-menu -modi power-menu:rofi-power-menu --symbols-font "Font Awesome 7 Free"
 
 # waybar
 exec waybar -c ~/.config/waybar/config1.jsonc
