@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/c24895ec-3369-4f3c-979a-d4780720bde6
 # **Dependencies**
 ```
 swayfx (AUR), rofi, mako, fastfetch, waybar, swaybg, hyprshot, kitty,
-thunar, ttf-jetbrains-mono, otf-font-awesome, cliphist, wiremix, wlogout (AUR),
+thunar, ttf-jetbrains-mono, otf-font-awesome, cliphist, wiremix,
 bluetui (AUR), swaylock-effects (AUR)
 ```
 
