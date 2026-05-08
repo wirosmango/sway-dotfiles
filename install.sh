@@ -16,6 +16,7 @@ else
 fi
 
 chmod +x cliphist-rofi 
+chmod +x powermenu.sh
 wl-paste --watch cliphist store
 cp -r * ~/.config
 cp -r ~/.config/powermenu.sh ~/.config/rofi/
