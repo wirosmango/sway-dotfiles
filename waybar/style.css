@@ -1,34 +1,35 @@
 
 * {
     border: none;
-    border-radius: 20;
+    border-radius: 10;
     font-family: JetBrains Mono;
     font-size: 14px;
     min-height: 0;
 }
 
 window#waybar {
-	background: transparent;
-	color:  #000000;
+	background: rgba(96, 116, 156, 0.5);
+	color:  #ffffff;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button {
     padding: 1 5px;
     background: transparent;
-    color: #000000;
+    color: #ffffff;
 }
 
 #workspaces button.focused {
-	background: #ffffff;
+	background: linear-gradient(45deg, #cbe3f2, #8ac5ed);
     color: #000000;
+    margin: 2px 2px;
 }
 
 #mode {
     color:  #f7768e;
 }
 
-#clock.1, #clock.2, #battery, #cpu, #memory, #backlight, #network, #pulseaudio, #custom-mpd, #tray, #mode, #idle_inhibitor {
+#clock.1, #battery, #cpu, #memory, #backlight, #network, #pulseaudio, #custom-mpd, #tray, #mode, #idle_inhibitor {
     padding: 1 10px;
     margin: 1 0px;
 }
@@ -37,7 +38,9 @@ window#waybar {
     background-color: transparent;
     font-size: 14px;
 }
-
+#calendar {
+	background-color: transparent;
+}
 @keyframes blink {
     to {
         background-color: #ffffff;
@@ -59,7 +62,8 @@ window#waybar {
 
 #language {
 	background:  transparent;
-	color: #000000;
+	color: #ffffff;
+	margin: 0px 5px;
 }
 
 #pulseaudio {
@@ -67,7 +71,7 @@ window#waybar {
 }
 
 #pulseaudio.muted {
-    background:  #bf2d2d;
+    background:  linear-gradient(45deg, #ffa9a3, #f75f54);
     color: #000000;
 }
 
