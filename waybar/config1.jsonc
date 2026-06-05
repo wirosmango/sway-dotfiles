@@ -3,8 +3,8 @@
     "position": "top",
     "height": 15, // Waybar height
     "margin-top": 5,
-    "margin-left": 5,
-    "margin-right": 5,
+    "margin-left": 10,
+    "margin-right": 10,
     // Choose the order of the modules
     "modules-left": ["sway/workspaces","sway/mode","mpris"],
     "modules-center": ["clock#1","custom/calendar"],
