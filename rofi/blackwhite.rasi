@@ -2,7 +2,7 @@
     font:   "JetBrainsMono Regular 11";
 
     bg0:     @transparent;
-    bg1:     ;rgba(0, 28, 104, 0.2);
+    bg1:     rgba(0, 28, 104, 0.2);
     fg0:     #ffffff;
 
     accent-color:     #ffffff;
