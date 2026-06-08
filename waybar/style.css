@@ -87,8 +87,9 @@ window#waybar {
     background-color: #000000;
 }
 #mpris {
-	background: #ffffff;
+	background: linear-gradient(45deg, #8ac5ed, #cbe3f2);
 	color: #000000;
-	border-radius: 5;
+	border-radius: 10;
 	margin-left: 5;
+	padding: 0 5px;	
 }
