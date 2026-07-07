@@ -54,17 +54,19 @@ bindsym --to-code $mod+c exec rofi -modi clipboard:~/.config/cliphist-rofi -show
 exec --no-startup-id nm-applet &
 
 # Volume control
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +6% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -6% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-
+exec systemctl --user start pipewire pipewire-pulse wireplumber
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 bindsym $mod+o exec kitty -e wiremix
 
 # Brightness control
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+# Night light
+bindsym $mod+n exec wlsunset -T 4100
+bindsym $mod+Shift+n exec pkill wlsunset
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
