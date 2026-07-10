@@ -86,10 +86,25 @@ window#waybar {
 #idle_inhibitor {
     background-color: #000000;
 }
+
 #mpris {
-	background: linear-gradient(45deg, #8ac5ed, #cbe3f2);
 	color: #000000;
 	border-radius: 10;
 	margin-left: 5;
 	padding: 0 5px;	
+	background: linear-gradient(90deg, #8ac5ed, #cbe3f2, #8ac5ed, #cbe3f2);
+	background-size: 400% 400%;
+	animation: gradient_anim 10s ease infinite;
+}
+
+@keyframes gradient_anim {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
