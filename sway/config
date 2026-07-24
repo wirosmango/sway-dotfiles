@@ -77,6 +77,7 @@ seat seat0 xcursor_theme GoogleDot-Black
 input type:touchpad {
     tap enabled
     natural_scroll enabled
+    dwt disabled
 }
 bindgesture swipe:right workspace prev
 bindgesture swipe:left workspace next

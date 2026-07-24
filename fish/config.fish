@@ -4,6 +4,7 @@ end
 
 # Created by `pipx` on 2026-02-18 14:25:44
 set PATH $PATH /home/wiros/.local/bin
+set PATH $PATH /home/wiros/.npm-global/bin
 
 set --global fish_color_autosuggestion 77a2c7
 set --global fish_color_cancel --reverse
