@@ -206,3 +206,6 @@ for_window [app_id="mate-calc"] floating toggle
 
 # fastfetch
 bindsym --to-code alt+f exec kitty --hold fastfetch 
+
+# wsnow
+bindsym alt+s exec ~/.config/sway/wsnow
