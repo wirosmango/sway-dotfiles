@@ -41,7 +41,7 @@ exec swayidle -w \
 bindsym --to-code $mod+l exec swaylock -f
 
 # Screenshot
-bindsym Print exec hyprshot -m region
+bindsym Print exec grim -g "$(slurp)" - | wl-copy && notify-send "Copied to clipboard"
 
 # Notifications
 exec_always --no-startup-id mako
@@ -95,18 +95,14 @@ bindsym --to-code $mod+q kill
 bindsym --to-code $mod+e exec thunar
 
 # start firefox
-bindsym --to-code $mod+x exec firefox
+bindsym --to-code $mod+x exec zen
 
 # start wofi -show drun (a program launcher)
 bindsym --to-code $mod+d exec --no-startup-id rofi -show drun
 # rofi -show window (switching windows)
 bindsym $mod+Tab exec rofi -show window
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -207,5 +203,5 @@ for_window [app_id="mate-calc"] floating toggle
 # fastfetch
 bindsym --to-code alt+f exec kitty --hold fastfetch 
 
-# wsnow
+# snow
 bindsym alt+s exec ~/.config/sway/wsnow
