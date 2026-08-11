@@ -1,31 +1,11 @@
 #!/usr/bin/env bash
-#
-# emoji-selector.sh — выбор эмодзи через rofi с копированием в буфер обмена
-# и (опционально) автовставкой в активное окно.
-#
-# Зависимости:
-#   - rofi
-#   - xclip (X11) или wl-clipboard (Wayland) — для копирования
-#   - xdotool (X11) или ydotool (Wayland) — опционально, для автовставки
-#
-# Установка (Arch/Debian-подобные):
-#   sudo pacman -S rofi xclip xdotool         # X11
-#   sudo apt install rofi xclip xdotool       # X11 (Debian/Ubuntu)
-#   sudo pacman -S rofi wl-clipboard ydotool  # Wayland
-#
-# Использование:
-#   ./emoji-selector.sh              # выбрать эмодзи, скопировать в буфер
-#   ./emoji-selector.sh --type       # выбрать эмодзи и сразу вставить в окно
-#
-# Файл со списком эмодзи ищется рядом со скриптом (emoji-list.txt).
-# Формат строки: "EMOJI ОписаниеНаЯзыке"
 
 set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 EMOJI_FILE="${EMOJI_LIST_FILE:-$SCRIPT_DIR/emoji-list.txt}"
 
-ROFI_THEME="${ROFI_EMOJI_THEME:-}"   # можно передать свою тему через переменную окружения
+ROFI_THEME="${ROFI_EMOJI_THEME:-}" 
 DO_TYPE=false
 
 for arg in "$@"; do
