@@ -1,27 +1,27 @@
 
 * {
     border: none;
-    border-radius: 10;
+    border-radius: 7;
     font-family: JetBrains Mono;
     font-size: 14px;
     min-height: 0;
 }
 
 window#waybar {
-	background: rgba(96, 116, 156, 0.5);
-	color:  #ffffff;
+	background: rgba(20, 24, 61, 0.7);
+	color:  #b7bded;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button {
     padding: 1 5px;
     background: transparent;
-    color: #ffffff;
+    color: #b7bded;
 }
 
 #workspaces button.focused {
-	background: linear-gradient(45deg, #cbe3f2, #8ac5ed);
-    color: #000000;
+	background:  linear-gradient(45deg, #353b8f, #080e63);
+    color: #ffffff;
     margin: 2px 2px;
 }
 
@@ -62,7 +62,7 @@ window#waybar {
 
 #language {
 	background:  transparent;
-	color: #ffffff;
+	color: #b7bded;
 	margin: 0px 5px;
 }
 
@@ -81,6 +81,7 @@ window#waybar {
 
 #tray {
     background: transparent;
+    color: #b7bded;
 }
 
 #idle_inhibitor {
@@ -88,11 +89,11 @@ window#waybar {
 }
 
 #mpris {
-	color: #000000;
-	border-radius: 10;
+	color: #b7bded;
+	border-radius: 7;
 	margin-left: 5;
 	padding: 0 5px;	
-	background: linear-gradient(90deg, #8ac5ed, #cbe3f2, #8ac5ed, #cbe3f2);
+	background: linear-gradient(90deg, #353b8f, #080e63, #353b8f, #080e63);
 	background-size: 400% 400%;
 	animation: gradient_anim 10s ease infinite;
 }

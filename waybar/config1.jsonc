@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top",
-    "height": 15, // Waybar height
+    "height": 20, // Waybar height
     "margin-top": 5,
     "margin-left": 10,
     "margin-right": 10,
