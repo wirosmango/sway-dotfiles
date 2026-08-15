@@ -3,12 +3,13 @@ set -e
 
 if command -v apt-get >/dev/null 2>&1; then
     echo "Installing for ALTLinux..."
-    sudo apt-get install swayfx rofi mako fastfetch waybar swaybg hyprshot kitty thunar fonts-ttf-jetbrains-mono-nl fonts-font-awesome cliphist swaylock fonts-ttf-fira-code-nerd wireplumber pipewire wayland wayland-protocols
-    
+    sudo apt-get install swayfx rofi mako fastfetch waybar swaybg hyprshot kitty thunar fonts-ttf-jetbrains-mono-nl fonts-font-awesome cliphist swaylock fonts-ttf-fira-code-nerd wireplumber pipewire wayland wayland-protocols python3-module-pip
+    pip install i3a
 
 elif command -v pacman >/dev/null 2>&1; then
     echo "Installing for Arch..."
-    yay -S swayfx rofi mako fastfetch waybar swaybg hyprshot kitty thunar ttf-jetbrains-mono otf-font-awesome cliphist wiremix bluetui swaylock-effects ttf-firacode-nerd wireplumber pipewire wayland wayland-protocols
+    yay -S swayfx rofi mako fastfetch waybar swaybg grim slurp kitty thunar ttf-jetbrains-mono otf-font-awesome cliphist wiremix bluetui swaylock-effects ttf-firacode-nerd wireplumber pipewire wayland wayland-protocols python-pip
+    pip install i3a
 
 else
     echo "Unsupported distro"
