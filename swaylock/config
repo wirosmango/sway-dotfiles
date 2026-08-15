@@ -1,10 +1,10 @@
-color=#9cd0f7
+image=~/.config/swaylock/wallpapers.jpg
 scaling=fill
 show-failed-attempts
 ring-color=#ffffff
 font=JetBrainsMono
 bs-hl-color=#e0ecff
-line-color=#000000
+line-color=#14183d
 line-clear-color=#ffffff
 line-ver-color=#20e381
 line-wrong-color=#c42b2b
