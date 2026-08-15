@@ -1,16 +1,18 @@
 # sway-dotfiles
 My dotfiles for swaywm
 
-<img width="1920" height="1080" alt="2026-07-24-141827_hyprshot" src="https://github.com/user-attachments/assets/f844982f-c5a6-4ba3-8118-9d6fb658ca9a" />
+<img width="1920" height="1080" alt="20260815_160553" src="https://github.com/user-attachments/assets/7a7c2af4-ecf9-4e92-9083-538a3713f1f3" />
 
 # **Screen record**
-https://github.com/user-attachments/assets/7000cc8a-7eb8-4a49-a8b9-eb44e959cee2
+
+https://github.com/user-attachments/assets/6a82fa91-824a-41d4-b0e8-5c5d88bfc5f4
 
 # **Dependencies**
 ```
-swayfx (AUR), rofi, mako, fastfetch, waybar, swaybg, hyprshot, kitty,
+swayfx (AUR), rofi, mako, fastfetch, waybar, swaybg, grim, kitty,
 thunar, ttf-jetbrains-mono, otf-font-awesome, cliphist, wiremix,
-bluetui (AUR), swaylock-effects (AUR), wireplumber, pipewire
+bluetui (AUR), swaylock-effects (AUR), wireplumber, pipewire,
+i3a (pip), slurp
 ```
 
 # **Installation**
