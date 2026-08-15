@@ -2,11 +2,11 @@
     font:   "JetBrainsMono Regular 11";
 
     bg0:     @transparent;
-    bg1:     rgba(0, 28, 104, 0.2);
-    fg0:     #ffffff;
+    bg1:     rgba(20, 24, 61, 0.7);
+    fg0:     #b7bded;
 
-    accent-color:     #ffffff;
-    urgent-color:     #ffcb6b;
+    accent-color:     #6873d0;
+    urgent-color:     #939ded;
 
     background-color:   transparent;
     text-color:         @fg0;
@@ -14,7 +14,7 @@
     margin:     0;
     padding:    0;
     spacing:    0;
-    transparent: rgba(96, 116, 156, 0.7);
+    transparent: rgba(28, 36, 107, 0.7);
 }
 
 window {
@@ -22,7 +22,7 @@ window {
     width:      500;
 
     background-color:   @bg0;
-    border-radius: 10;
+    border-radius: 7;
     transparency: "real";
 }
 
@@ -77,7 +77,7 @@ element alternate active {
 
 element selected {
     text-color: @bg0;
-    border-radius: 10;
+    border-radius: 7;
 }
 
 element selected normal, element selected active {

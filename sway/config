@@ -1,5 +1,5 @@
-# exec_always --no-startup-id sleep 1 && systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP && systemctl --user start sway-session.target
-# include /etc/sway/config.d/*
+exec_always --no-startup-id sleep 1 && systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP && systemctl --user start sway-session.target
+include /etc/sway/config.d/*
 
 set $mod Mod4
 set $term kitty
@@ -9,11 +9,11 @@ font pango:JetBrainsMono Regular 8
 
 # Start XDG autostart
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-# exec systemctl --user stop xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-gtk
-# exec systemctl --user start xdg-desktop-portal-wlr
+exec systemctl --user stop xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-gtk
+exec systemctl --user start xdg-desktop-portal-wlr
 
 # wallpaper
-output * bg ~/.config/sway/wallpapers.jpg fill
+output * bg ~/.config/sway/wallpaper.jpg fill
 # Layout
 input * {
     xkb_layout "us,ru"
@@ -30,12 +30,12 @@ shadow_blur_radius 20
 shadow_color #000000F1
 
 # Rounded corners
-corner_radius 10
+corner_radius 7
 
 # Title
 for_window [class="^.*"] border pixel 2
-client.focused #ffffff #ffffff #000000 #ffffff #ffffff
-client.unfocused #000000 #000000 #ffffff #000000 #000000
+client.focused #2a7cd4 #2a7cd4 #000000 #2a7cd4 #2a7cd4
+client.unfocused #191e63 #191e63 #ffffff #191e63 #191e63
 
 # Lockscreen and idle
 exec swayidle -w \
@@ -45,7 +45,7 @@ exec swayidle -w \
 bindsym --to-code $mod+l exec swaylock -f
 
 # Screenshot
-bindsym Print exec grim -g "$(slurp)" - | tee ~/Pictures/$(date +%Y%m%d_%H%M%S).png | wl-copy
+bindsym Print exec grim -g "$(slurp)" - | tee ~/Изображения/$(date +%Y%m%d_%H%M%S).png | wl-copy
 
 # Notifications
 exec_always --no-startup-id mako
@@ -149,8 +149,8 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym --to-code $mod+a focus parent
 
-# focus the child container
-#bindsym $mod+d focus child
+# dwm stack
+exec "systemctl --user restart i3a-master-stack.service"
 
 # Workspaces
 set $ws1 "1"
