@@ -1,5 +1,5 @@
 # sway-dotfiles
-My dotfiles for swaywm
+My dotfiles for swaywm (stolen by this ueb-1 > [PurityMind](https://github.com/PurityMind))
 
 <img width="1920" height="1080" alt="20260815_160553" src="https://github.com/user-attachments/assets/7a7c2af4-ecf9-4e92-9083-538a3713f1f3" />
 
