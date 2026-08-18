@@ -8,8 +8,7 @@ if command -v apt-get >/dev/null 2>&1; then
 
 elif command -v pacman >/dev/null 2>&1; then
     echo "Installing for Arch..."
-    yay -S swayfx rofi mako fastfetch waybar swaybg grim slurp kitty thunar ttf-jetbrains-mono otf-font-awesome cliphist wiremix bluetui swaylock-effects ttf-firacode-nerd wireplumber pipewire wayland wayland-protocols python-pip
-    pip install i3a
+    yay -S swayfx rofi mako fastfetch waybar swaybg grim slurp kitty thunar ttf-jetbrains-mono otf-font-awesome cliphist wiremix bluetui swaylock-effects ttf-firacode-nerd wireplumber pipewire wayland wayland-protocols autotiling-rs-git
 
 else
     echo "Unsupported distro"

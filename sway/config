@@ -13,7 +13,7 @@ exec systemctl --user stop xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop
 exec systemctl --user start xdg-desktop-portal-wlr
 
 # wallpaper
-output * bg ~/.config/sway/wallpaper.jpg fill
+output * bg ~/.config/sway/wallpapers.jpg fill
 # Layout
 input * {
     xkb_layout "us,ru"
@@ -149,8 +149,21 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym --to-code $mod+a focus parent
 
+# resize
+mode "resize" {
+	bindsym Left resize shrink width 20px
+	bindsym Down resize grow height 20px
+	bindsym Up resize shrink height 20px
+	bindsym Right resize grow width 20px
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
 # dwm stack
-exec "systemctl --user restart i3a-master-stack.service"
+exec autotiling-rs
+
 
 # Workspaces
 set $ws1 "1"

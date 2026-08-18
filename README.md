@@ -11,8 +11,8 @@ https://github.com/user-attachments/assets/6a82fa91-824a-41d4-b0e8-5c5d88bfc5f4
 ```
 swayfx (AUR), rofi, mako, fastfetch, waybar, swaybg, grim, kitty,
 thunar, ttf-jetbrains-mono, otf-font-awesome, cliphist, wiremix,
-bluetui (AUR), swaylock-effects (AUR), wireplumber, pipewire,
-i3a (pip), slurp
+bluetui (AUR), swaylock-effects (AUR), wireplumber, pipewire, 
+slurp, autotiling-rs-git (AUR)
 ```
 
 # **Installation**
